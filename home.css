@@ -18,19 +18,30 @@ body {
 }
 
 /* header left and header right */
-.header-nav-right, .header-nav-left {
-    display: flex;
+.header-nav-left {
     gap: 40px;
+    display: flex;
     margin-right: 30px;
     margin-left: 30px;
 }
-
+.header-nav-right {
+    gap: 10px;
+    display: flex;
+    margin-left: 30px;
+}
 .header-nav-right, .header-nav-left {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 19px;
+}
+.icon {
+    margin-right: 30px;
+    display: flex;
+    width: 20px;
+    height: 20px;
+    top: 1.53px;
 }
 
 /* header center */
