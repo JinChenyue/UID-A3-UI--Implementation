@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /* header style */
 .site-header {
     display: flex;
@@ -5,53 +11,55 @@
     align-items: center;
     padding: 10px 20px;
     background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid #e5e5e5;
+/* Fixes the header at the top.
+Ensure the header span from left edge to right edge */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; /* Keeps the header above other content */
 }
 
-.left-header, .header-center, .right-header {
+/* General link styles */
+.site-header a{
+    text-decoration: none;
+    font-family: 'Inter';
+    color: #333;
+}
+
+/* Style for the left side of the header */
+.left-header .header-nav-left {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-left: 10px;
+    margin-right: 60px;
+}
+
+/* Style for the center of the header */
+.header-center .main-logo {
+    max-width: 100px; /* Adjust the logo size as needed */
+}
+
+/* Style for the right side of the header */
+.right-header {
     display: flex;
     align-items: center;
 }
 
-/* style for navigation bar*/
-.header-nav-left {
-    gap: 40px;
-    display: flex;
-    margin-right: 30px;
-    margin-left: 30px;
-}
 .header-nav-right {
-    gap: 10px;
+    gap: 5px;
     display: flex;
+} 
 
-}
-/* font style */
-.header-nav-right, .header-nav-left {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 19px;
-}
 /* icons */
-.icon {
-    margin-right: 20px;
+.header-icon {
     display: flex;
     width: 20px;
     height: 20px;
-    top: 1.53px;
+    margin-right: 20px;
 }
-
-/* header center */
-.header-center {
-    display: absolute;
-    flex-direction: column;
-    align-items: center;
-}
-.main-logo {
-    height: 50px;
-}
-
 
 
 /* style for footer */
@@ -66,106 +74,95 @@
 
 
 .footer-column {
-    display: flex;
-    justify-content: space-between;
+    display:flex;
     margin-left: 60px;
     margin-right: 60px;
+    font-size: larger
 }
 
-.column1, .column2, .column3 {
-    width: 30%;
+.column1 {
+    margin-left: 30px;
+    width: 20%;
 }
-
-.column1 h3 {
-    margin-top: 0;
-    font-size: 1.2em;
-    margin-bottom: 15px;
+.column2{
+    width: 40%;
+} 
+.column3{
+    width: auto;
 }
 
 .column1 ul, .column2 ul {
     list-style: none;
-    padding: 0;
 }
 
 .column1 ul li, .column2 ul li {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
-.column1 ul li a, .column2 ul li a {
+.footer-column a {
     margin-bottom: 10px;
     color: #333;
+    font-family: Actor;
     text-decoration: none;
 }
 
-.column2 p {
-    margin-top: 0;
-    margin-bottom: 20px;
+.site-footer h3{
+    font-family: Inter;
+    font: bold;
+    padding-bottom: 20px;
 }
+
+
 /* style for the Newsletter */
 .column3 form {
     display: flex;
-    align-items: center;
-    gap: 10px;
+    align-items: left;
+    font-family: Actor;
 }
 
 .column3 input[type="email"] {
-    padding: 10px;
+    margin-top: 20px;
+    padding: 15px;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 20px;
     flex-grow: 1;
 }
 
 .column3 button {
-    padding: 10px 20px;
+    padding: 10px 40px;
+    margin-top: 20px;
     background-color: #34383b;
     color: #fff;
     border: none;
-    border-radius: 5px;
+    border-radius: 20px;
     cursor: pointer;
 }
 
-.footer-logo {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-top: 20px;
-}
-/* icon at the right buttom */
+
+/* Logo at buttom rigth*/
 .footer-logo img {
-    position: absolute;
+    position:absolute;
     width: 135px;
-    height: 62.76px;
-    right: 20px;
+    height: 80px;
+    right: 10px;
     bottom: 20px;
 }
 
-
+/* Icons at the buttom left  */
 .footer-social-icon {
-    display: flex;
+    display:flex;
     gap: 10px;
     margin-top: 20px;
     margin-left: 80px;
-    margin-bottom: 50px;
-}
-
-.footer-social-icon a {
-    color: #333;
-    text-decoration: none;
-    font-size: 1.5em;
-}
-
-.payment-icon {
-    display: flex;
-    gap: 10px;
-    margin-top: 20px;
+    margin-bottom: 30px;
+    height: 20px;
 }
 
 .payment-icon img {
-    position: absolute;
-    height: auto;
-    width: 262px;
-    left: 100px;
-    bottom: 40px;
+    display:flex;
+    margin-left: 80px;
+    margin-bottom: 50px;
+    height: 40px;
 }
 
 

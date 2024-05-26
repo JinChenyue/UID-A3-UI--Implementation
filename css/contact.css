@@ -1,9 +1,8 @@
-body, html {
+body{
     margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    box-sizing: border-box;
+    padding-top: 40px;
 }
+
 
 .contact-container {
     display: flex;
@@ -20,6 +19,9 @@ body, html {
 .contact-form h1 {
     font-size: 2.5em;
     margin-bottom: 20px;
+    font-family: 'Actor';
+    font-style: normal;
+    color: #000000;
 }
 
 .form-group {
@@ -42,7 +44,7 @@ body, html {
     font-size: 1em;
 }
 
-button[type="submit"] {
+#submit[type="submit"] {
     display: block;
     width: 100%;
     padding: 15px;
@@ -54,7 +56,7 @@ button[type="submit"] {
     cursor: pointer;
 }
 
-button[type="submit"]:hover {
+#submit [type="submit"]:hover {
     background-color: #555;
 }
 
@@ -68,5 +70,4 @@ button[type="submit"]:hover {
 .contact-image img {
     max-width: 100%;
     height: auto;
-    border-radius: 10px;
-}
+    border-radiu
