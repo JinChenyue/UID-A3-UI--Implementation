@@ -1,4 +1,237 @@
 body {
     margin: 0;
-    background-color: #ffffff;
+    background-color: #f9f9f9;
+    padding-top: 80px;
+}
+/* Nav bar at the top */
+.product-detail-nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.product-detail-nav li{
+    list-style: none;
+    padding: 10px 8%;
+    font-size: large;
+    border-right: 1px solid #E4E1D8;
+}
+.product-detail-nav a {
+    text-decoration: none;
+    color: #3e4348;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.product-detail-nav a:hover{
+    text-decoration: underline;
+}
+
+/* Product section */
+.product-page{
+    display: flex;
+}
+
+.extra-images{
+    display: flex;
+    align-items: center;
+    width:25px
+}
+.extra-images img{
+    width: 40px
+}
+.product-details{
+    flex:1
+}
+/* Product description section */
+.description{
+    margin: 40px;
+}
+.description h1{
+    text-align: center;
+    padding-top: 20px;
+    margin: 20px 20% 20px 20%;
+    border-top: 2px solid #E4E1D8;
+}
+
+.description-content{
+    display: flex;
+    justify-content: space-between;
+    align-items:inherit;
+    margin: 0px 10% 20px 10%;
+    gap: 80px;
+}
+.item-description{
+    flex: 1;
+    text-align: left;
+    padding: 10px;
+}
+
+.item-description h2{
+    margin-bottom: 20px;
+}
+
+.item-description p{
+    line-height: 28px;
+    font-size: large;
+    font-family: Aksara Bail Galang;
+
+}
+
+/* Features of the shop and products */
+.features-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 0px;
+    margin: 80px 3%;
+}
+
+.item-feature{
+    width: 25%; 
+    height: 80px;
+    display: inline-block;
+    padding: 0 20px;
+    margin: 0px;
+    text-align: center;
+    border-left: 2px solid #E4E1D8;
+    border-right: 2px solid #E4E1D8;
+}
+.item-feature h3, p{
+    padding: 5px;
+    color: #3e4348;
+}
+
+/* Review section */
+.reviews{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px;
+    padding: 40px;
+}
+.reviews h1{
+    display: block;
+    padding: 30px 30%;
+    border-top: 2px solid #E4E1D8;
+}
+.reviews-summary{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 120px;
+    padding: 10% 20%;
+    background-color: #E4E1D8;
+}
+/* Left side */
+.ratings-distribution{
+    padding: 40px;
+}
+.ratings-distribution .rating-bar{
+    display: flex;
+
+    flex-direction: row;
+}
+.ratings-distribution .bar{
+    display: inline-block;
+    border: 1px solid #ffffff;
+    height: 4px;
+    color: #3e4348;
+    /* background-color: #ffffff; */
+    /* padding: 2px 100%; */
+}
+
+/* Right side */
+.average-rating{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: larger;
+}
+.average-rating p{
+    font-size: xx-large;
+}
+/* write-review-button */
+.average-rating .write-review-button{
+    padding: 10px 40px;
+    margin-top: 20px;
+    font-size: large;
+    border: none;
+    border-radius: 10px;
+    background-color: #3e4348;
+    color: white;
+}
+
+/* Recommended Section */
+.recommended{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 60px;
+}
+/* Heading */
+.recommended h1{
+    display: block;
+    padding: 30px 30%;
+    border-top: 2px solid #E4E1D8;
+}
+
+/* Recommended product */
+.all-recommended-product{
+    display: flex;
+    flex-direction: row;
+    align-items: inherit;
+    gap: 20px;
+}
+/* Product card style */
+.recommended-products{
+    margin-bottom: 10px;
+    width: 300px;
+    padding-bottom: 20px;
+    text-align: center;
+    border-bottom:2px solid #e5e5e5;
+}
+
+.recommended-products .product-image {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+
+.recommended-products .product-name {
+    text-align: left;
+    font-size: large;
+    height: 30px;
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+
+.recommended-products .product-price {
+    font-weight: bold;
+    color: #000000;
+    text-align: left;
+    height: auto;
+    width: 120px;
+}
+
+.recommended-products .original-price {
+    text-decoration: line-through;
+    font-size: smaller;
+    color: #3E4348;
+    margin-left: 10px;
+}
+
+.recommended-products .product-action{
+    display: flex;
+    align-content: center;
+    margin-left: 200px;
+}
+
+.recommended-products .product-icon {
+    height: 20px;
+    width: auto;
+    margin: 0 8px;
+    cursor: pointer;
 }
