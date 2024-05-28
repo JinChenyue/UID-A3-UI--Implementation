@@ -27,6 +27,10 @@ Ensure the header span from left edge to right edge */
     font-family: 'Inter';
     color: #333;
 }
+/* Text underline when hovering */
+.site-header a:hover{
+    text-decoration: underline;
+}
 
 /* Style for the left side of the header */
 .left-header .header-nav-left {
@@ -160,4 +164,11 @@ Ensure the header span from left edge to right edge */
     height: 20px;
 }
 
-.payment-icon 
+.payment-icon img {
+    display:flex;
+    margin-left: 80px;
+    margin-bottom: 50px;
+    height: 40px;
+}
+
+

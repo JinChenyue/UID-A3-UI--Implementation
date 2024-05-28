@@ -1,4 +1,133 @@
 body {
     margin: 0;
-    background-color: #ffffff;
-  
+    background-color: #f9f9f9;
+    padding-top: 60px;
+}
+
+.top-section img{
+    width: 100%;
+    height: auto;
+}
+
+/* Shopping cart stays at fixed position */
+.shopping-cart{
+    position: fixed;
+    right: 0;
+    top: 70%;
+    z-index: 1000;
+}
+
+.shopping-cart img{
+    width: 80%;
+}
+
+/* Nav bar */
+.product-nav{
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.product-nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0 10px;
+
+}
+.product-nav li{
+    font-size: larger;
+    padding: 10px 70px;
+    border-left: 1px solid #e5e5e5;
+}
+
+.product-nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+/* underline appear when hovering */
+.product-nav a:hover {
+    text-decoration: underline;
+}
+
+.product-nav input{
+    padding: 8px 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.product-nav select{
+    padding: 8px 5px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+/* Product Grid section */
+/* product cards */
+.product-grid {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+}
+.all-products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+.all-products .product-card {
+    display: flex;
+    margin-left: 20px;
+    gap: 0px;
+}
+
+.product-card {
+    margin-bottom: 10px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+}
+
+.product-card .product-image {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+
+.product-card .product-name {
+    text-align: left;
+    font-size: large;
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+
+.product-card .product-price {
+    font-weight: bold;
+    height: auto;
+    width: 120px;
+}
+
+.product-card .original-price {
+    text-decoration: line-through;
+    font-size: smaller;
+    color: #3E4348;
+    margin-left: 10px;
+}
+
+.product-card .product-action{
+    display: flex;
+    align-items: center;
+    margin-left: 150px;
+}
+
+.product-card .product-icon {
+    height: 20px;
+    width: auto;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
