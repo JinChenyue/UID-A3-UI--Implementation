@@ -1,6 +1,7 @@
 body{
     margin: 0;
-    padding-top: 40px;
+    padding-top: 60px;
+    box-sizing: border-box;
 }
 
 
@@ -13,11 +14,15 @@ body{
 
 .contact-form {
     flex: 1;
+    padding: 10px;
     margin-right: 20px;
+    margin-left: 40px;
+    border-right: 1px solid #e4e1d8;
 }
 
 .contact-form h1 {
-    font-size: 2.5em;
+    font-size: 3em;
+    font-family: Actor;
     margin-bottom: 20px;
     font-family: 'Actor';
     font-style: normal;
@@ -25,49 +30,43 @@ body{
 }
 
 .form-group {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .form-group label {
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     font-weight: bold;
 }
 
-.form-group input,
-.form-group textarea {
-    width: calc(100% - 20px);
-    padding: 10px;
+.name {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+#first-name, #last-name{
+    padding: 15px;
+    width: auto;
     border: 1px solid #ddd;
     border-radius: 5px;
     box-sizing: border-box;
     font-size: 1em;
 }
 
-#submit[type="submit"] {
-    display: block;
-    width: 100%;
+#email {
+    width: 90%;
     padding: 15px;
-    background-color: #333;
-    color: white;
-    border: none;
+    border: 1px solid #ddd;
     border-radius: 5px;
-    font-size: 1.2em;
-    cursor: pointer;
+    box-sizing: border-box;
+    font-size: 1em;
 }
 
-#submit [type="submit"]:hover {
-    background-color: #555;
-}
-
-.contact-image {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.contact-image img {
-    max-width: 100%;
-    height: auto;
-    border-radiu
+.form-group textarea {
+    width: 90%;
+    padding: 10px;
+    padding-bottom: 60px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box
