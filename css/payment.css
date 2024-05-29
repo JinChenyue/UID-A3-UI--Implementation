@@ -11,39 +11,346 @@ body {
 .checkout-main{
     display: flex;
     flex-direction: column;
+    margin-left: 80px;
+    padding:0 40px;
+    border-right: 2px solid #e4e1d8;
 }
+
+/* Express checkout */
+.express-checkout{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.express-checkout .payment-buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+.express-checkout h2{
+    padding: 20px;
+    align-content: center;
+}
+.payment-buttons button{
+    width: max-content;
+    height: auto;
+    border: none;
+}
+/* Divider */
+.divider{
+    padding: 20px;
+}
+.divider {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.divider .line {
+    flex: 1;
+    height: 1px;
+    width: 100px;
+    background-color: #3e4348;
+}
+
+.divider .or {
+    padding: 0 10px;
+    color: #666;
+}
+
+
+
+
+/* Delivery */
+.delivery-info{
+    display:inline-block;
+}
+.delivery-info h3{
+    padding: 20px 0;
+}
+.delivery-method label{
+    display: block;
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+/* Address */
+.address-form{
+    margin-top: 20px;
+}
+.address-form input{
+    width: 100%;
+    padding: 15px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+.address-form select{
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+.address-form .name-fields{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+.address-form .location-fields{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+/* Contact infomation */
+.contact-info{
+    margin-top: 20px;
+}
+.contact-info .email{
+    display: inline-block;
+    width: 100%;
+    padding: 15px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+.contact-info .checkbox{
+    display: inline-block;
+    width: auto;
+    align-items: center;
+    padding: 5px;
+}
+.contact-info .phone{
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+.contact-info .phone input{
+    border: none;
+    width: 95%;
+    padding: 15px;
+    border-radius: 5px;
+}
+/* Shipping method */
+.shipping-method{
+    margin: 20px 0px;
+    display:block;
+}
+.shipping-method input{
+    width: 100%;
+    padding: 15px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+/* Payment information*/
+
+.payment-info{
+    display: inline-block;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+.payment-info h3{
+    padding: 10px 0;
+}
+
+.payment-methods {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #fdfdfd;
+    border: 1px solid #e4e1d8;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.payment-method {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.card-option{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid #e4e1d8;
+    border-radius: 5px;
+    margin-bottom: 20px;
+
+}
+.payment-method label {
+    padding: 10px;
+}
+    
+.credit-card-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.credit-card-info input {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.card-detail{
+    display:flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.card-detail img{
+    background-color: #ccc;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* Other payment options */
+.payment-methods .paypal{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid #e4e1d8;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.payment-methods .wechat{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid #e4e1d8;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+/* Remember me */
+.save-info{
+    display:flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 80px;
+}
+.save-info span{
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fdfdfd;
+    margin-bottom: 20px;
+}
+.save-info button{
+    color: #ffffff;
+    background-color: #3e4348;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: larger;
+}
+
 /* Order summary */
 .order-summary{
     display: flex;
     flex-direction: column;
     align-items: left;
-    margin: 40px;
+    margin: 60px;
 }
 
 .order-summary h3{
     font-size: x-large;
     padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 20px;
     border-bottom:2px solid #3e4348;
-    /* background-color:red; */
-
 }
+
 .order-item{
     display: flex;
     flex-direction: row;
     align-items: center;
     padding-top: 20px;
     border-bottom:2px solid #e4e1d8;
-    /* justify-content: space-between; */
 }
-.order-item img{
-    width: 20%;
-}
-.item-details{
-    /* line-height: 30px; */
-    padding-left: 20px;
-}
-.order-total{
-    display: inline-block;
-    padding-top: 20%;
 
+.order-item img{
+    width: 15%;
+}
+
+.item-details{
+    padding-left: 20px;
+    width: 80%;
+    padding-bottom: 5px;
+}
+.item-details h4{
+    padding-bottom: 10px;
+}
+.order-item .quantity-control{
+    display: flex;
+    align-items: center;
+    border:2px solid #3e4348;
+    border-radius: 20px;
+    padding: 0 3px;
+}
+.quantity-control button{
+    font-size: larger;
+    background-color: #f9f9f9;
+    padding: 0px 5px;
+    border: none;
+    border-radius: 10px;
+}
+
+.quantity-control input{
+    text-align: center;
+    width: 40px;
+    padding-left: 15px;
+    height: auto;
+    background-color: #f9f9f9;
+    border: none;
+
+}
+
+/* Total */
+.order-total{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    border-top: 2px solid #3e4348;
+    margin-top: 30%;
+}
+.order-total p{
+ font-size: x-large;
+ padding-top: 10px;
+ margin: 0px 20px;
 }

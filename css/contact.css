@@ -69,4 +69,36 @@ body{
     padding-bottom: 60px;
     border: 1px solid #ddd;
     border-radius: 5px;
-    box
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+#submit[type="submit"] {
+    display: block;
+    width: 90%;
+    padding: 15px;
+    background-color: #34383b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+#submit [type="submit"]:hover {
+    background-color: #34383b;
+}
+
+/* Right side of section */
+.contact-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
