@@ -43,58 +43,95 @@
     <!-- summary of shipping and payment information  -->
     <!-- Left side -->
     <div class="confirmation-container">
-        <div class="confirmation-details">
+
+        <section class="confirmation-details">
             <div class="success-message">
                 <img src="A3 image/confirm.svg" alt="Success Icon">
-                <h1>Order successful!</h1>
-                <p>Thank you for choosing OZ Paws And Tools</p>
+                <span>
+                    <h1>Order successful!</h1>
+                    <h3>Thank you for choosing OZ Paws And Tools</h3>                    
+                </span>
             </div>
-            <div class="order-info">
-                <p><strong>Order number:</strong> 100865739</p>
-                <p><strong>Order Date:</strong> 2024/03/27</p>
-                <p><strong>Account ID:</strong> 770387</p>
+            <div class="customer-info">
+                <div class="order-info">
+                    <span><p><strong>Order number:</strong> </p><p>100865739</p></span>
+                    <span><p><strong>Order Date:</strong> </p><p>2024/03/27</p></span>
+                    <span><p><strong>Account ID:</strong> </p><p>770387</p></span>
+                </div>
+                <div class="shipping-info">
+                    <span>
+                        <img src="A3 image/Pin-Location.svg" alt="location icon" class="icon">
+                        <h4>Shipping Address</h4>                    
+                    </span>
+                    <p>7 Haideh St<br>Wantirna South 3152<br>VIC</p>
+                </div>
+                <div class="contact-info">
+                    <!-- Contact Information -->
+                    <div>
+                        <span>
+                            <img src="A3 image/Phone.svg" alt="phone icon" class="icon">
+                            <p><strong>Mobile:</strong> </p>                           
+                        </span>
+                        <p>0486379039</p>                        
+                    </div>
+                    <div>
+                        <span>
+                            <img src="A3 image/Email.svg" alt="email icon" class="icon">
+                            <p><strong>Email:</strong> </p>                         
+                        </span>
+                        <p>abcgh@hotmail.com</p>
+                    </div>
+                </div>
+
+                <div class="payment-info">
+                    <h4>Payment Method</h3>
+                    <p>Credit Card</p>                  
+                </div>
+
+
             </div>
-            <div class="shipping-info">
-                <h3>Shipping Address</h3>
-                <img src="A3 image/Pin-Location.svg" alt="location icon" class="icon">
-                <p>7 Haideh St<br>Wantirna South 3152<br>VIC</p>
-                <!-- Contact Information -->
-                <p><strong>Mobile:</strong> 0486379039</p>
-                <img src="A3 image/Phone.svg" alt="phone icon" class="icon">
-                <p><strong>Email:</strong> abcgh@hotmail.com</p>
-                <img src="A3 image/Email.svg" alt="email icon" class="icon">
-                <h3>Payment Method</h3>
-                <p>Credit Card</p>
-            </div>
-        </div>
+
+
+        </section>
     <!-- summary of order -->
     <!-- Right side -->
-        <div class="order-summary">
+        <section class="order-summary">
             <h2>Order Summary</h2>
+            
             <div class="order-item">
-                <img src="A3 image/filter.svg" alt="Pet Air Filter">
+                <img src="A3 image/filter.svg" alt="Product 1">
                 <div class="item-details">
-                    <p>Pet Air Filter</p>
+                    <h4>Pet Air Filter</h4>
                     <p>$29.99</p>
                     <p>White</p>
-                    <p>× 1</p>
+                </div>                        
+                <div class="quantity-control">
+                    <input type="number" value="1" min="1">
                 </div>
             </div>
+
+
             <div class="order-item">
-                <img src="A3 image/harness.svg" alt="S-XL Front Range No-Pull Dog Harness">
+                <img src="A3 image/harness.svg" alt="Product 2">
                 <div class="item-details">
-                    <p>S-XL Front Range No-Pull Dog Harness</p>
+                    <h4>S-XL Front Range No-Pull Dog Harness</h4>
                     <p>$54.95</p>
                     <p>Grey</p>
-                    <p>× 1</p>
                 </div>
+                <div class="quantity-control">
+                    <input type="number" value="1" min="1">
+                </div>
+
             </div>
+
             <div class="order-total">
-                <p><strong>Subtotal:</strong> $84.94</p>
-                <p><strong>Shipping:</strong> Free</p>
-                <p><strong>Total:</strong> $84.94</p>
+                <div class="summary">
+                    <span><p><strong>Subtotal</strong> </p><p>$84.94</p></span>
+                    <span><p><strong>Shipping</strong> </p><p>Free</p></span>                  
+                </div>
+                <span class="total"><p><strong>Total</strong></p> <p>$84.94</p></span>
             </div>
-        </div>
+        </section>
     </div>
 
     <!-- Footer section-->

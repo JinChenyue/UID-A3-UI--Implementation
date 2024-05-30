@@ -1,3 +1,5 @@
+
+// Shopping cart 
 function toggleCart() {
     const cartOverlay = document.getElementById('cartOverlay');
     if (cartOverlay.style.display === 'flex') {
@@ -6,8 +8,15 @@ function toggleCart() {
         cartOverlay.style.display = 'flex';
     }
 }
-
-
+// Search area
+function toggleSearch() {
+    const searchOverlay = document.getElementById('searchOverlay');
+    if (searchOverlay.style.display === 'block') {
+        searchOverlay.style.display = 'none';
+    } else {
+        searchOverlay.style.display = 'block';
+    }
+}
 // Javascript for product list page
 
 // Information for all the products
