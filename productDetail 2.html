@@ -58,7 +58,7 @@
             <!-- action bottoms -->
             <div class="cart-actions">
                 <button class="continue-shopping" id="button1" onclick="toggleCart()">Continue Shopping</button>
-                <button class="checkout" id="button2" onclick="window.location.href='paymentPage.html'">Check Out</button>
+                <button class="checkout" id="button2" onclick="checkout()">Check Out</button>
             </div>
         </div>
     </div>
@@ -74,6 +74,9 @@
         </div>
     </div>
     
+
+
+
     
     <!-- Navigation Tabs -->
     <nav class="product-detail-nav">
@@ -145,7 +148,7 @@
             </ul>
             <!-- Buttons to purchase -->
             <div class="product-actions">
-                <button class="add-to-cart">Add To Cart</button>
+                <button class="add-to-cart" onclick="addToCart(1)">Add To Cart</button>
                 <button class="buy-now">Buy Now</button>
             </div>
         </div>

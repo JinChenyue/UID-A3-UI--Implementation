@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/product-detail.css">
     <script src="Javascript/A3.js"></script>
+
 </head>
 <body>
     
@@ -47,7 +48,7 @@
                 <button class="close-button" onclick="toggleCart()"><img src="A3 image/Close.svg" alt="Close"></button>
             </div>
             <div class="cart-items-container" id="cart-items-container">
-                
+                <!-- item add through javascript -->
             </div>
             <!-- Total -->
             <div class="cart-total">
@@ -58,7 +59,7 @@
             <!-- action bottoms -->
             <div class="cart-actions">
                 <button class="continue-shopping" id="button1" onclick="toggleCart()">Continue Shopping</button>
-                <button class="checkout" id="button2" onclick="window.location.href='paymentPage.html'">Check Out</button>
+                <button class="checkout" id="button2" onclick="checkout()">Check Out</button>
             </div>
         </div>
     </div>
@@ -84,11 +85,15 @@
         </ul>
     </nav>
 
+
+
+    <button class="return" onclick="window.location.href='productpage.html'" > < Back</button>
     <!-- product section -->
     <section class="product-page" id="product">
 
         <!-- left part of the section: images -->
         <div class="product-images">
+            
             <!-- Main image -->
             <img src="A3 image/filter 1.svg" alt="Pet Air Purifier image 1" id="main-image">
             <!-- Extra images of the product -->
@@ -144,7 +149,7 @@
             </ul>
             <!-- Buttons to purchase -->
             <div class="product-actions">
-                <button class="add-to-cart">Add To Cart</button>
+                <button class="add-to-cart" onclick="addToCart(0)">Add To Cart</button>
                 <button class="buy-now">Buy Now</button>
             </div>
         </div>

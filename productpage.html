@@ -15,12 +15,12 @@
         <!-- set up left side of header -->
         <div class="left-header"> 
             <nav class="header-nav-left">
-                <a href="">SHOP ></a>
+                <a href="productpage.html">SHOP ></a>
                 <a href="">LEARN ></a>
                 <a href="">BLOG ></a>
             </nav>
         </div>
-    
+      
         <!-- set up center of the header -->
         <a href="index.html" class="header-center">
             <img src="A3 image/Logo.svg" alt="Logo" class="main-logo">
@@ -29,15 +29,50 @@
         <!-- set up rigth side of header -->
         <div class="rigth-header">
             <nav class="header-nav-right">
-                <a href="#">ACCOUNT</a>
+                <button href="#">ACCOUNT</button>
                 <img src="A3 image/User.svg" alt="Account logo" class="header-icon">
-                <a href="#">SEARCH</a>
+                <button class="search-button" onclick="toggleSearch()">SEARCH</button>
                 <img src="A3 image/Search.svg" alt="Search icon" class="header-icon">
-                <a href="#">CART</a>
+                <button class="cart-button" onclick="toggleCart()">CART</button>
                 <img src="A3 image/ShoppingCart.svg" alt="Shopping cart icon" class="header-icon">
             </nav>
         </div>
     </header>
+
+    <!-- shopping cart -->
+    <div class="cart-overlay" id="cartOverlay">
+        <div class="cart-window">
+            <div class="cart-top">
+                <h2>Shopping Cart</h2>
+                <button class="close-button" onclick="toggleCart()"><img src="A3 image/Close.svg" alt="Close"></button>
+            </div>
+            <div class="cart-items-container" id="cart-items-container">
+                
+            </div>
+            <!-- Total -->
+            <div class="cart-total">
+                <h3>Total</h3>
+                <p id="total-price">0.00</p>
+            </div>
+
+            <!-- action bottoms -->
+            <div class="cart-actions">
+                <button class="continue-shopping" id="button1" onclick="toggleCart()">Continue Shopping</button>
+                <button class="checkout" id="button2" onclick= "checkout()">Check Out</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Search Bar -->
+    <div class="search-overlay" id="searchOverlay">
+        <div class="search-window">
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">             
+                <img src="A3 image/Search.svg" alt="Search icon">
+            </div>
+            <button class="close-button" onclick="toggleSearch()"><img src="A3 image/Close.svg" alt="Close"></button>
+        </div>
+    </div>
     
 
     <!-- top section -->
@@ -74,40 +109,9 @@
     <section class="product-grid" id="product-grid">
         <!-- Product container -->
         <div class="all-products">
-
-
         <!-- Product items injected by JavaScript -->
-            <!-- Peroduct cart html tamplate -->
-
-        <!-- <div class="product-card" id="product-template" style="display: none;">
-                <img src="" alt="" class="product-image">
-                <h3 class="product-name"></h3>
-
-                <p class="product-price"><span class="original-price"></span></p>
-                <span class="product-action">
-                    <img src="A3 image/Hearts.svg" alt="like" class="product-icon">
-                    <img src="A3 image/Shopping-Cart.svg" alt="add to cart" class="product-icon">
-                </span>
-
-            </div> -->
-<!-- 
-            <div class="product-card">
-                <img src="${product.image}" alt="${product.name}" class="product-image">
-                <h3 class="product-name">${product.name}</h3>
-                <p class="product-price">${product.price}<span class="original-price">${product.originalPrice}</span></p>
-                <div class="product-action">
-                    <img src="A3 image/Hearts.svg" alt="like" class="product-icon">
-                    <img src="A3 image/Shopping-Cart.svg" alt="add to cart" class="product-icon">
-                </div>
-            </div> -->
-
-
-
-
-
         </div>   
     </section>
-
 
 
 

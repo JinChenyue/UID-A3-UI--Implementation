@@ -3,10 +3,12 @@ body {
     padding-top: 80px;
     background-color: #f9f9f9;
 }
+
 .checkout-container{
     display: flex;
 
 }
+
 /* Check out form  */
 .checkout-main{
     display: flex;
@@ -15,6 +17,15 @@ body {
     padding:0 40px;
     border-right: 2px solid #e4e1d8;
 }
+
+/* check box for filling the form */
+.autofill{
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
 
 /* Express checkout */
 .express-checkout{
@@ -296,6 +307,11 @@ body {
     border-bottom:2px solid #3e4348;
 }
 
+#order-summary-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
 .order-item{
     display: flex;
     flex-direction: row;
@@ -334,7 +350,6 @@ body {
 .quantity-control input{
     text-align: center;
     width: 40px;
-    padding-left: 15px;
     height: auto;
     background-color: #f9f9f9;
     border: none;
@@ -342,15 +357,19 @@ body {
 }
 
 /* Total */
-.order-total{
-    display: flex;
-    align-items: center;
-    justify-content:space-between;
-    border-top: 2px solid #3e4348;
-    margin-top: 30%;
+#order-total{
+    display: block;
+    margin-top: 20%;
 }
-.order-total p{
+#order-total{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top: 2px solid #3e4348;
+}
+
+#order-total p{
  font-size: x-large;
  padding-top: 10px;
  margin: 0px 20px;
-}
+} 
