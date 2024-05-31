@@ -153,7 +153,6 @@ Ensure the header span from left edge to right edge */
 .quantity-control input{
     text-align: center;
     width: 40px;
-    padding-left: 15px;
     height: auto;
     background-color: #f9f9f9;
     border: none;

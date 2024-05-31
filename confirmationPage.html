@@ -97,39 +97,51 @@
     <!-- Right side -->
         <section class="order-summary">
             <h2>Order Summary</h2>
-            
-            <div class="order-item">
-                <img src="A3 image/filter.svg" alt="Product 1">
-                <div class="item-details">
-                    <h4>Pet Air Filter</h4>
-                    <p>$29.99</p>
-                    <p>White</p>
-                </div>                        
-                <div class="quantity-control">
-                    <input type="number" value="1" min="1">
+            <div class="item-container">
+                <!-- <div class="order-item">
+                    <img src="A3 image/filter.svg" alt="Product 1">
+                    <div class="item-details">
+                        <h4>Pet Air Filter</h4>
+                        <p>$29.99</p>
+                        <p>White</p>
+                    </div>                        
+                    <div class="quantity-control">
+                        <input type="number" value="1" min="1">
+                    </div>
                 </div>
+
+
+                <div class="order-item">
+                    <img src="A3 image/harness.svg" alt="Product 2">
+                    <div class="item-details">
+                        <h4>S-XL Front Range No-Pull Dog Harness</h4>
+                        <p>$54.95</p>
+                        <p>Grey</p>
+                    </div>
+                    <div class="quantity-control">
+                        <input type="number" value="1" min="1">
+                    </div>
+                </div> -->
+                <div class="order-item">
+                    <img src="${product.image}" alt="${product.name}">
+                    <div class="item-details">
+                        <h4 class="item-name">${product.name}</h4>
+                        <p class="item-price">${product.price}</p>
+                        <p class="item-original">${product.originalPrice}</p>
+                    </div>
+                    <div class="quantity-control">
+                        <input type="number" value="1" min="1">
+                    </div>
+                </div> 
             </div>
 
-
-            <div class="order-item">
-                <img src="A3 image/harness.svg" alt="Product 2">
-                <div class="item-details">
-                    <h4>S-XL Front Range No-Pull Dog Harness</h4>
-                    <p>$54.95</p>
-                    <p>Grey</p>
-                </div>
-                <div class="quantity-control">
-                    <input type="number" value="1" min="1">
-                </div>
-
-            </div>
 
             <div class="order-total">
                 <div class="summary">
                     <span><p><strong>Subtotal</strong> </p><p>$84.94</p></span>
                     <span><p><strong>Shipping</strong> </p><p>Free</p></span>                  
                 </div>
-                <span class="total"><p><strong>Total</strong></p> <p>$84.94</p></span>
+                <span class="total"><p><strong>Total</strong></p> <p id="item-total">$84.94</p></span>
             </div>
         </section>
     </div>

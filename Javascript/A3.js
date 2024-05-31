@@ -1,4 +1,4 @@
-
+// Floating window
 // Shopping cart 
 function toggleCart() {
     const cartOverlay = document.getElementById('cartOverlay');
@@ -17,22 +17,29 @@ function toggleSearch() {
         searchOverlay.style.display = 'block';
     }
 }
+
+
+
+
+
 // Javascript for product list page
 
 // Information for all the products
-const products = [
+let products = [
     { name: "Pet Air Filter", price: "$29.99", originalPrice: "", image: "A3 image/filter.svg" },
-    { name: "S-XL Front Range No-Pull Dog Harness", price: "$54.95", originalPrice: "$119.99", image: "A3 image/harness.svg" },
+    { name: "S-XL Front Range No-Pull Dog Harness", price: "$54.95", originalPrice: "$119.99", image: "A3 image/harness.svg"},
     { name: "Calming Dog Bed", price: "$58.99", originalPrice: "", image: "A3 image/products/dog bed.svg" },
-    { name: "Grooming Kit", price: "$52.99", originalPrice: "$64.99", image: "A3 image/products/grooming kit.svg" },
-    { name: "Pet Safety Seat Belt", price: "$23.99", originalPrice: "$35.99", image: "A3 image/products/seat belt.svg" },
+    { name: "Grooming Kit", price: "$52.99", originalPrice: "$64.99", image: "A3 image/products/grooming kit.svg"},
+    { name: "Pet Safety Seat Belt", price: "$23.99", originalPrice: "$35.99", image: "A3 image/products/seat belt.svg"},
     { name: "Pet Dryer", price: "$149.99", originalPrice: "", image: "A3 image/products/Dryer.svg" },
-    { name: "Teeth Cleaning Toy", price: "$17.99", originalPrice: "$20.99", image: "A3 image/products/Tooth cleaning toy.svg" },
-    { name: "Pet Safety Seat Belt", price: "$23.99", originalPrice: "$35.99", image: "A3 image/products/seat belt 2.svg" },
-    { name: "Cordless Vacuum Cleaner", price: "$74.99", originalPrice: "", image: "A3 image/products/cleaner.svg" },
-    { name: "Cordless Pet Clipper Grooming Kit", price: "$49.99", originalPrice: "", image: "A3 image/products/clipper.svg" },
+    { name: "Teeth Cleaning Toy", price: "$17.99", originalPrice: "$20.99", image: "A3 image/products/Tooth cleaning toy.svg"},
+    { name: "Pet Safety Seat Belt", price: "$23.99", originalPrice: "$35.99", image: "A3 image/products/seat belt 2.svg"},
+    { name: "Cordless Vacuum Cleaner", price: "$74.99", originalPrice: "", image: "A3 image/products/cleaner.svg"},
+    { name: "Cordless Pet Clipper Grooming Kit", price: "$49.99", originalPrice: "", image: "A3 image/products/clipper.svg"},
 ];
-// Loading all the products
+
+
+// Loading all the products in product list page.
 document.addEventListener('DOMContentLoaded', function() {
 
     const container = document.querySelector('.all-products');
@@ -60,14 +67,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-
 // JaveScript for product details page
 
 // Set up varibles
 document.addEventListener('DOMContentLoaded', function() {
     const thumbnails = document.querySelectorAll('.thumbnail');
     const mainImage = document.getElementById('main-image');
-    const quantityInput = document.querySelector('.quantity input');
+    const quantityInput = document.getElementById('quantity-input');
     const quantityDecrease = document.querySelector('.quantity-decrease');
     const quantityIncrease = document.querySelector('.quantity-increase');
     const colorOptions = document.querySelectorAll('.color');
@@ -99,3 +105,57 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+
+
+
+
+// var: products cart
+
+// name(product detail page)---> cart(get info form products)
+
+// add to cart--->shopping cart (get jnfo from cart)
+// check out--->order(checkout page) (get info cart)
+// pay now--->order summary(confirmation page) (get info from cart
+
+// empty cart 
+
+
+
+// add to cart--checkout---paynow
+
+// add item to cart and store info in cart=[]
+addToCart()
+
+// get quantity for input
+// parseInt(quantityInput.value);
+
+// cart page
+displayCartItem()
+// checkout page
+displayOrderSummary ()
+// confirmation page
+displayConfirmationSummary()
+
+// HTML for display item
+
+// const cartItem =`
+// <div class="cart-item">
+//     <img src="${item.image}" alt="Product image" class="item-image">
+//     <div class="item-details">
+//         <h4 class="item-name">${item.name}</h4>
+//         <p class="item-price">${item.price}</p>
+//     </div>                        
+//     <div class="quantity-control">
+//         <button class="quantity-decrease">-</button>
+//         <input id="quantity-input" value="${item.quantity}">
+//         <button class="quantity-increase">+</button>
+//     </div>
+// </div>
+// `;
+
+
+
+
+let cart = [];
+
