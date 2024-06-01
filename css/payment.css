@@ -63,7 +63,7 @@ body {
 .divider .line {
     flex: 1;
     height: 1px;
-    width: 100px;
+    width: 100;
     background-color: #3e4348;
 }
 
@@ -71,8 +71,6 @@ body {
     padding: 0 10px;
     color: #666;
 }
-
-
 
 
 /* Delivery */
@@ -184,7 +182,7 @@ body {
 /* Payment information*/
 
 .payment-info{
-    display: inline-block;
+    display: block;
     margin-bottom: 20px;
     border-radius: 10px;
 }
@@ -373,3 +371,118 @@ body {
  padding-top: 10px;
  margin: 0px 20px;
 } 
+
+
+/* Tablet styles */
+@media (max-width: 768px) {
+    .checkout-container{
+        justify-content: center;
+    }
+    .checkout-main{
+        display: block;
+        max-width: 100%;
+        border: none;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 20px;
+    }
+
+    .checkout-sidebar{
+        display: none;
+    }
+
+    .express-checkout h2 {
+        padding: 10px;
+        font-size: large;
+    }
+
+    .express-checkout .payment-buttons {
+        flex-direction: row;
+        gap: 10px;
+        padding: 0;
+    }
+
+    .express-checkout .payment-buttons img{
+        width: 100%;
+        padding: 0;
+    }
+
+    .express-checkout .payment-buttons button{
+        padding: 0;
+        width: 80%;
+    }
+
+    .divider .line {
+        width: 80px;
+    }
+}
+
+
+
+/* iPhone 12 Pro portrait styles */
+@media (max-width: 390px) {
+    .checkout-main{
+        padding: 16px;
+    }
+
+    .express-checkout h2 {
+        padding: 10px;
+        font-size: large;
+    }
+
+    .express-checkout .payment-buttons {
+        flex-direction: row;
+        gap: 10px;
+        padding: 0;
+    }
+
+    .express-checkout .payment-buttons img{
+        width: 100%;
+        padding: 0;
+
+    }
+
+    .express-checkout .payment-buttons button{
+        padding: 0;
+        width: 80%;
+    }
+
+    .divider .line {
+        width: 50px;
+    }
+
+    .contact-info .phone span{
+        align-items: center;
+    }
+
+    .contact-info .phone input{
+        width: 90%;
+    }
+
+    .delivery-method label,
+    .address-form input,
+    .address-form select,
+    .contact-info .email,
+    .contact-info .phone input,
+    .shipping-method input,
+    .credit-card-info input,
+    .save-info span,
+    .save-info button {
+        padding: 10px;
+        font-size: small;
+    }
+
+    .card-option img{
+        width: 50%;
+    }
+
+    .save-info {
+        margin-bottom: 20px;
+    }
+
+    .save-info button {
+        font-size: small;
+        padding: 8px;
+    }
+}

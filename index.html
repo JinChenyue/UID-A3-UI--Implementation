@@ -6,6 +6,9 @@
     <title>OZ Paws and Tools</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
     <script src="Javascript/A3.js"></script>
 </head>
 <body>
@@ -38,6 +41,42 @@
             </nav>
         </div>
     </header>
+
+
+    <!-- header for mobile -->
+    <header class="mobile-header">
+        <!-- set up left side of header -->
+        <div class="left-header"> 
+            <button class="side-bar" onclick="toggleSideBar()"><img src="A3 image/mobile/sidebar.svg" alt=""></button>
+        </div>
+      
+        <!-- set up center of the header -->
+        <a href="index.html" class="header-center">
+            <img src="A3 image/Logo.svg" alt="Logo" class="main-logo">
+        </a>
+        
+        <!-- set up rigth side of header -->
+        <div class="rigth-header">
+            <nav class="header-nav-right">
+
+                <button href="#"><img src="A3 image/User.svg" alt="Account logo" class="header-icon"></button>
+                
+                <button class="search-button" onclick="toggleSearch()"><img src="A3 image/Search.svg" alt="Search icon" class="header-icon"></button>
+
+                <button class="cart-button" onclick="toggleCart()"><img src="A3 image/ShoppingCart.svg" alt="Shopping cart icon" class="header-icon"></button>
+                
+            </nav>
+        </div>
+    </header>
+    <div class="side-nav" id="barOverlay">
+        <nav class="nav-column">
+            <a href="productpage.html">SHOP ></a>
+            <a href="#">LEARN ></a>
+            <a href="#">BLOG ></a>
+            <a href="#">SHIPPING ></a>
+            <a href="contactPage.html">CONTACT ></a>
+        </nav>
+    </div>
 
     <!-- shopping cart -->
     <div class="cart-overlay" id="cartOverlay">
@@ -99,30 +138,38 @@
         </div>
         <!-- informatin for right side -->
         <div class="s2-right-side">
-            <h2>Tools and Essentials</h2>
-            <p>Elevate your pet's daily routine with our innovative and dependable pet essentials. At Oz Pet Shop, we believe that every pet deserves the best.</p>
-            <button class="explore-button">Explore More ></button>
+            <div class="context">
+                <h2>Tools and Essentials</h2>
+                <p>Elevate your pet's daily routine with our innovative and dependable pet essentials. At Oz Pet Shop, we believe that every pet deserves the best.</p>
+                <button class="explore-button" onclick="window.location.href = 'productpage.html'">Explore More ></button>              
+            </div>
             <!-- general information for best sell products -->
             <div class="products">
-                <div class="product">
-                    <img src="A3 image/harness.svg" alt="S-XL Front Range No-Pull Dog Harness">
+                <a href="productDetail 2.html"  class="product">
+                    <img src="A3 image/harness.svg" alt="S-XL Front Range No-Pull Dog Harness" class="image">
                     <p>S-XL Front Range No-Pull Dog Harness</p>
-                    <p class="price">$54.95 <span class="original-price">$119.99</span></p>
-                    <span class="row">
-                        <img src="A3 image/Hearts.svg" alt="like" class="S2-icon">
-                        <img src="A3 image/Shopping-Cart.svg" alt="add to cart" class="S2-icon">
-                    </span>
-                </div>
+                    <p class="price">$54.95 <span class="original-price">$119.99</span>
+                        <span class="row">
+                            <img src="A3 image/Hearts.svg" alt="like" class="S2-icon">
+                            <img src="A3 image/Shopping-Cart.svg" alt="add to cart" class="S2-icon">
+                        </span>                  
+                    </p>
+                </a>
 
-                <div class="product">
-                    <img src="A3 image/filter.svg" alt="Pet Air Filter">
+                <a href="productDetail.html" class="product">
+                    <img src="A3 image/filter.svg" alt="Pet Air Filter" class="image">
                     <p>Pet Air Filter</p>
-                    <p class="price">$29.99</p>
-                    <span class="row">
-                        <img src="A3 image/Hearts.svg" alt="like" class="S2-icon">
-                        <img src="A3 image/Shopping-Cart.svg" alt="add to cart" class="S2-icon">
-                    </span>
-                </div>
+                    <p class="price">$29.99
+                        <span class="row">
+                            <img src="A3 image/Hearts.svg" alt="like" class="S2-icon">
+                            <img src="A3 image/Shopping-Cart.svg" alt="add to cart" class="S2-icon">
+                        </span>                        
+                    </p>
+                </a>
+            </div>
+            <div class="products-mobile">
+                <a href="productDetail 2.html"><img src="A3 image/mobile/mobile-harness.svg" alt=""></a>
+                <a href="productDetail.html"><img src="A3 image/mobile/mobile-filter.svg" alt=""></a>
             </div>
         </div>
     </section>
@@ -182,7 +229,7 @@
             </div>
             <img src="A3 image/S4 pic1.svg" alt="person with dog" class="s4-image-left">
         </div>
-        <!-- bottum part: Why Us -->
+    <!-- bottum part: Why Us -->
         <div class="s4-buttom">
             <img src="A3 image/S4 pic2.svg" alt="person with dog" class="s4-image-right">
             <div class="s4-buttom-texts">
@@ -194,7 +241,6 @@
                         <li>✔️ 24/7 Customer Support</li>
                         <li>✔️ Secured Transactions</li>
                         <li>✔️ Satisfaction Guarantee</li>
-
                     </ul>
                     <ul>
                         <li>✔️ No Hassle Returns</li>
@@ -204,6 +250,35 @@
 
             </div>
         </div>
+<!-- section 4 for mobile -->
+        <div class="s4-mobile">
+            <div class="text-1">
+                <h2>Australia's Highest Rated Pet Store</h2>
+                <p>It is our mission to provide the pet owners of Australia with the safest, most affordable and most convenient pet supplies available.</p>
+                <a href="contactPage.html" class="cta-button">Contact Us</a>
+            </div>
+            <div class="text-2">
+                <img src="A3 image/S4 pic1.svg" alt="person with dog" class="s4-image-left">
+                <p>To achieve this we ONLY sell products that have positive benefits for you and your pet. <br><br>
+                    Everything we sell has been scientifically proven to have a positive effect on your pet!</p>
+            </div>
+            <div class="text-3">
+                <div>
+                    <h2>WHY US?</h2>
+                    <ul>
+                        <li>✔️ 24/7 Customer Support</li>
+                        <li>✔️ Secured Transactions</li>
+                        <li>✔️ Satisfaction Guarantee</li>
+                        <li>✔️ No Hassle Returns</li>
+                        <li>✔️ Premium Quality</li> 
+                    </ul>                           
+                </div>
+                <img src="A3 image/S4 pic2.svg" alt="person with dog" class="s4-image-left">
+            </div>
+            <p>Oz Pet Shop Pets provides the highest quality pet equipment the market has to offer.
+                Feel comfortable to take your companion wherever you desire hassle-free with our simple, easy to use products.</p>
+        </div>
+
     </section>
 
     <!--section 5: Blog Section -->
@@ -226,26 +301,28 @@
     <footer class="site-footer">
         <div class="footer-column">
             <!-- Part 1 -->
-            <div class="column1">
-                <h3>Learn</h3>
-                <ul>
-                    <li><a href="#">Who We Are</a></li>
-                    <li><a href="#">Store Locator</a></li>
-                    <li><a href="#">Subscribe & Save</a></li>
-                    <li><a href="#">Blog</a></li>
-                </ul>
-            </div>
-            <!-- Part 2 -->
-            <div class="column2">
-                <h3>Help</h3>
-                <ul>
-                    <li><a href="#">Shipping & Delivery</a></li>
-                    <li><a href="#">Satisfaction Guarantee</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Terms of Service</a></li>
-                    <li><a href="#">FAQs</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
+            <div class="context">
+                <div class="column1">
+                    <h3>Learn</h3>
+                    <ul>
+                        <li><a href="#">Who We Are</a></li>
+                        <li><a href="#">Store Locator</a></li>
+                        <li><a href="#">Subscribe & Save</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <!-- Part 2 -->
+                <div class="column2">
+                    <h3>Help</h3>
+                    <ul>
+                        <li><a href="#">Shipping & Delivery</a></li>
+                        <li><a href="#">Satisfaction Guarantee</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
             </div>
             <!-- Part 3 -->
             <div class="column3">

@@ -1,0 +1,15 @@
+body h1, h2, h3{
+    font-family:'Roboto', Actor;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+body p {
+    font-family:'Roboto', Aksara Bali Galang;
+    font-weight: 200;
+    color: #34383b;
+}
+
+body button{
+    font-family:'Roboto', Aksara Bali Galang;
+}

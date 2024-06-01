@@ -36,15 +36,26 @@ function toggleSearch() {
         searchOverlay.style.display = 'block';
     }
 }
-
+// confirmation page 
 function toggleReturn() {
-    const searchOverlay = document.getElementById('returnOverlay');
-    if (searchOverlay.style.display === 'flex') {
-        searchOverlay.style.display = 'none';
+    const returnOverlay = document.getElementById('returnOverlay');
+    if (returnOverlay.style.display === 'flex') {
+        returnOverlay.style.display = 'none';
     } else {
-        searchOverlay.style.display = 'flex';
+        returnOverlay.style.display = 'flex';
     }
 }
+function toggleSideBar(){
+    const barOverlay = document.getElementById('barOverlay');
+    if (barOverlay.style.display === 'flex') {
+        barOverlay.style.display = 'none';
+    } else {
+        barOverlay.style.display = 'flex';
+    }
+}   
+
+
+
 
 // Javascript for product list page
 

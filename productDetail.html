@@ -40,6 +40,42 @@
         </div>
     </header>
 
+
+    <!-- header for mobile -->
+    <header class="mobile-header">
+        <!-- set up left side of header -->
+        <div class="left-header"> 
+            <button class="side-bar" onclick="toggleSideBar()"><img src="A3 image/mobile/sidebar.svg" alt=""></button>
+        </div>
+      
+        <!-- set up center of the header -->
+        <a href="index.html" class="header-center">
+            <img src="A3 image/Logo.svg" alt="Logo" class="main-logo">
+        </a>
+        
+        <!-- set up rigth side of header -->
+        <div class="rigth-header">
+            <nav class="header-nav-right">
+
+                <button href="#"><img src="A3 image/User.svg" alt="Account logo" class="header-icon"></button>
+                
+                <button class="search-button" onclick="toggleSearch()"><img src="A3 image/Search.svg" alt="Search icon" class="header-icon"></button>
+
+                <button class="cart-button" onclick="toggleCart()"><img src="A3 image/ShoppingCart.svg" alt="Shopping cart icon" class="header-icon"></button>
+                
+            </nav>
+        </div>
+    </header>
+    <div class="side-nav" id="barOverlay">
+        <nav class="nav-column">
+            <a href="productpage.html">SHOP ></a>
+            <a href="#">LEARN ></a>
+            <a href="#">BLOG ></a>
+            <a href="#">SHIPPING ></a>
+            <a href="contactPage.html">CONTACT ></a>
+        </nav>
+    </div>
+
     <!-- shopping cart -->
     <div class="cart-overlay" id="cartOverlay">
         <div class="cart-window">
@@ -48,7 +84,7 @@
                 <button class="close-button" onclick="toggleCart()"><img src="A3 image/Close.svg" alt="Close"></button>
             </div>
             <div class="cart-items-container" id="cart-items-container">
-                <!-- item add through javascript -->
+                
             </div>
             <!-- Total -->
             <div class="cart-total">
@@ -59,11 +95,11 @@
             <!-- action bottoms -->
             <div class="cart-actions">
                 <button class="continue-shopping" id="button1" onclick="toggleCart()">Continue Shopping</button>
-                <button class="checkout" id="button2" onclick="checkout()">Check Out</button>
+                <button class="checkout" id="button2" onclick= "checkout()">Check Out</button>
             </div>
         </div>
     </div>
-    
+
     <!-- Search Bar -->
     <div class="search-overlay" id="searchOverlay">
         <div class="search-window">
@@ -74,6 +110,10 @@
             <button class="close-button" onclick="toggleSearch()"><img src="A3 image/Close.svg" alt="Close"></button>
         </div>
     </div>
+
+
+
+
     
     <!-- Navigation Tabs -->
     <nav class="product-detail-nav">
@@ -85,9 +125,8 @@
         </ul>
     </nav>
 
-
-
     <button class="return" onclick="window.location.href='productpage.html'" > < Back</button>
+
     <!-- product section -->
     <section class="product-page" id="product">
 
@@ -272,6 +311,11 @@
                     <img src="A3 image/Shopping-Cart.svg" alt="add to cart" class="product-icon">
                 </span>
             </div>
+        </div>
+        <div class="mobile-recommonded">
+            <img src="A3 image/mobile/recommend1.svg" alt="">
+            <img src="A3 image/mobile/recommend2.svg" alt="">
+        </div>
     </section>
 
 
@@ -279,26 +323,28 @@
     <footer class="site-footer">
         <div class="footer-column">
             <!-- Part 1 -->
-            <div class="column1">
-                <h3>Learn</h3>
-                <ul>
-                    <li><a href="#">Who We Are</a></li>
-                    <li><a href="#">Store Locator</a></li>
-                    <li><a href="#">Subscribe & Save</a></li>
-                    <li><a href="#">Blog</a></li>
-                </ul>
-            </div>
-            <!-- Part 2 -->
-            <div class="column2">
-                <h3>Help</h3>
-                <ul>
-                    <li><a href="#">Shipping & Delivery</a></li>
-                    <li><a href="#">Satisfaction Guarantee</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Terms of Service</a></li>
-                    <li><a href="#">FAQs</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
+            <div class="context">
+                <div class="column1">
+                    <h3>Learn</h3>
+                    <ul>
+                        <li><a href="#">Who We Are</a></li>
+                        <li><a href="#">Store Locator</a></li>
+                        <li><a href="#">Subscribe & Save</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <!-- Part 2 -->
+                <div class="column2">
+                    <h3>Help</h3>
+                    <ul>
+                        <li><a href="#">Shipping & Delivery</a></li>
+                        <li><a href="#">Satisfaction Guarantee</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
             </div>
             <!-- Part 3 -->
             <div class="column3">
@@ -326,6 +372,7 @@
                 <img src="A3 image/payment list.svg" alt="icon">
             </div>
         </div>
+
     </footer>
 
     
