@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/contact.css">
     <link rel="stylesheet" href="css/font.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="Javascript/A3.js"></script>
 </head>
 <body>
 
@@ -16,12 +17,12 @@
         <!-- set up left side of header -->
         <div class="left-header"> 
             <nav class="header-nav-left">
-                <a href="">SHOP ></a>
+                <a href="productpage.html">SHOP ></a>
                 <a href="">LEARN ></a>
                 <a href="">BLOG ></a>
             </nav>
         </div>
-    
+      
         <!-- set up center of the header -->
         <a href="index.html" class="header-center">
             <img src="A3 image/Logo.svg" alt="Logo" class="main-logo">
@@ -30,15 +31,86 @@
         <!-- set up rigth side of header -->
         <div class="rigth-header">
             <nav class="header-nav-right">
-                <a href="#">ACCOUNT</a>
+                <button href="#">ACCOUNT</button>
                 <img src="A3 image/User.svg" alt="Account logo" class="header-icon">
-                <a href="#">SEARCH</a>
+                <button class="search-button" onclick="toggleSearch()">SEARCH</button>
                 <img src="A3 image/Search.svg" alt="Search icon" class="header-icon">
-                <a href="#">CART</a>
+                <button class="cart-button" onclick="toggleCart()">CART</button>
                 <img src="A3 image/ShoppingCart.svg" alt="Shopping cart icon" class="header-icon">
             </nav>
         </div>
     </header>
+
+
+    <!-- header for mobile -->
+    <header class="mobile-header">
+        <!-- set up left side of header -->
+        <div class="left-header"> 
+            <button class="side-bar" onclick="toggleSideBar()"><img src="A3 image/mobile/sidebar.svg" alt=""></button>
+        </div>
+      
+        <!-- set up center of the header -->
+        <a href="index.html" class="header-center">
+            <img src="A3 image/Logo.svg" alt="Logo" class="main-logo">
+        </a>
+        
+        <!-- set up rigth side of header -->
+        <div class="rigth-header">
+            <nav class="header-nav-right">
+
+                <button href="#"><img src="A3 image/User.svg" alt="Account logo" class="header-icon"></button>
+                
+                <button class="search-button" onclick="toggleSearch()"><img src="A3 image/Search.svg" alt="Search icon" class="header-icon"></button>
+
+                <button class="cart-button" onclick="toggleCart()"><img src="A3 image/ShoppingCart.svg" alt="Shopping cart icon" class="header-icon"></button>
+                
+            </nav>
+        </div>
+    </header>
+    <div class="side-nav" id="barOverlay">
+        <nav class="nav-column">
+            <a href="productpage.html">SHOP ></a>
+            <a href="#">LEARN ></a>
+            <a href="#">BLOG ></a>
+            <a href="#">SHIPPING ></a>
+            <a href="contactPage.html">CONTACT ></a>
+        </nav>
+    </div>
+
+    <!-- shopping cart -->
+    <div class="cart-overlay" id="cartOverlay">
+        <div class="cart-window">
+            <div class="cart-top">
+                <h2>Shopping Cart</h2>
+                <button class="close-button" onclick="toggleCart()"><img src="A3 image/Close.svg" alt="Close"></button>
+            </div>
+            <div class="cart-items-container" id="cart-items-container">
+                
+            </div>
+            <!-- Total -->
+            <div class="cart-total">
+                <h3>Total</h3>
+                <p id="total-price">0.00</p>
+            </div>
+
+            <!-- action bottoms -->
+            <div class="cart-actions">
+                <button class="continue-shopping" id="button1" onclick="toggleCart()">Continue Shopping</button>
+                <button class="checkout" id="button2" onclick= "checkout()">Check Out</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Search Bar -->
+    <div class="search-overlay" id="searchOverlay">
+        <div class="search-window">
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">             
+                <img src="A3 image/Search.svg" alt="Search icon">
+            </div>
+            <button class="close-button" onclick="toggleSearch()"><img src="A3 image/Close.svg" alt="Close"></button>
+        </div>
+    </div>
 
     <!-- main section -->
     <section class="contact-us">
@@ -83,26 +155,28 @@
     <footer class="site-footer">
         <div class="footer-column">
             <!-- Part 1 -->
-            <div class="column1">
-                <h3>Learn</h3>
-                <ul>
-                    <li><a href="#">Who We Are</a></li>
-                    <li><a href="#">Store Locator</a></li>
-                    <li><a href="#">Subscribe & Save</a></li>
-                    <li><a href="#">Blog</a></li>
-                </ul>
-            </div>
-            <!-- Part 2 -->
-            <div class="column2">
-                <h3>Help</h3>
-                <ul>
-                    <li><a href="#">Shipping & Delivery</a></li>
-                    <li><a href="#">Satisfaction Guarantee</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Terms of Service</a></li>
-                    <li><a href="#">FAQs</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
+            <div class="context">
+                <div class="column1">
+                    <h3>Learn</h3>
+                    <ul>
+                        <li><a href="#">Who We Are</a></li>
+                        <li><a href="#">Store Locator</a></li>
+                        <li><a href="#">Subscribe & Save</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <!-- Part 2 -->
+                <div class="column2">
+                    <h3>Help</h3>
+                    <ul>
+                        <li><a href="#">Shipping & Delivery</a></li>
+                        <li><a href="#">Satisfaction Guarantee</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
             </div>
             <!-- Part 3 -->
             <div class="column3">
@@ -130,6 +204,7 @@
                 <img src="A3 image/payment list.svg" alt="icon">
             </div>
         </div>
+
     </footer>
 
 </body>
