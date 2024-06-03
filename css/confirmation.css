@@ -6,6 +6,7 @@ body {
 
 .confirmation-container{
     display: flex;
+    flex-direction: row;
     justify-content: center;
 }
 
@@ -79,10 +80,6 @@ body {
     flex-direction: row;
     justify-content: space-between;
 }
-
-
-
-
 
 /* Order summary */
 .confirmation-summary{
@@ -287,7 +284,6 @@ body {
     .finish-button{
         width:100% ;
     }
-
 }
 
 /* Finish page */
@@ -371,7 +367,6 @@ body {
 .finish .return:hover, .finish .close-button:hover {
     text-decoration: underline;
 }
-
 
 /* Tablet styles */
 @media (max-width: 768px) {

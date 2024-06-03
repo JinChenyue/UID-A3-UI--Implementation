@@ -208,7 +208,10 @@ function displayCartItems() {
         });
     });
 }
-
+function directPay(productIndex){
+    addToCart(productIndex)
+    window.location.href = 'paymentPage.html';
+}
 // 'check out' action in shopping cart 
 function checkout() {
     window.location.href = 'paymentPage.html';
